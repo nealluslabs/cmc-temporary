@@ -8,11 +8,12 @@
 
 /**
  * Custom base styles, applied after the tailwind-base classes
+ Poppins, Roboto, Helvetica Neue, Arial,
  */
 
 html {
     font-size: 62.5%;
-    font-family: Poppins, Roboto, Helvetica Neue, Arial, sans-serif !important;
+    font-family:  sans-serif !important;
     background-color: #121212;
 }
 

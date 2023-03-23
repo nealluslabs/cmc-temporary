@@ -93,7 +93,9 @@ export default function HomePage() {
       </Helmet>*/}
 
       <Container maxWidth="xl">
-
+        <center>
+        <p style={{fontSize:"32px",marginBottom:"15px"}}> WELCOME GLOBUS UT1 CONTRACTORS</p>  
+        </center>
   <Grid container spacing={2} style={{border: '0px solid red'}}>
         
   <Grid item xs={12} md={8} lg={6} style={{border: '0px solid green', height: '800px'}}>

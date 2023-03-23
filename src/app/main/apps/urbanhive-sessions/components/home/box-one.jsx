@@ -11,7 +11,13 @@ export default function BoxOne() {
   //const { user } = useSelector((state) => state.auth);
 
   return (
+      <>
+    <center>
+     <p style={{fontSize:"19px",}}><strong>CONTRACTORS:</strong> (11+ THIS MONTH)</p>
+     </center>
     <Grid container spacing={3} sx={{mt: 1}}>
+      
+
       <Grid item xs={6}>
       <center>
       <Typography
@@ -53,5 +59,6 @@ export default function BoxOne() {
       </Typography></center>
       </Grid>
     </Grid>
+    </>
   );
 }

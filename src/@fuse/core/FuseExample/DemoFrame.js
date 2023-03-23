@@ -58,10 +58,10 @@ class DemoFrame extends Component {
           __html: `
                     html {
                     font-size: 62.5%;
-                    font-family: Poppins, Roboto, Helvetica Neue, Arial, sans-serif;
+                    font-family: sans-serif;
                     }
                 `,
-        }}
+        }} /*Poppins, Roboto, Helvetica Neue, Arial,  */
       />
       <noscript id="jss-demo-insertion-point" />
     </>

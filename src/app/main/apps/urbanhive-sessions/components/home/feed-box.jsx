@@ -78,8 +78,8 @@ export default function FeedBox() {
             style={{
               minHeight: '35px',
               minWidth: '100px',
-              backgroundColor: 'white',
-              color: 'black',
+              backgroundColor: 'black',
+              color: 'white',
               border: '1px solid black',
             }}
           >

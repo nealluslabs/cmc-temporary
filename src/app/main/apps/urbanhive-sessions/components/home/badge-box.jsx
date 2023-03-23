@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     color: 'black',
     fontWeight: "bold",
-    fontSize: "1.5rem",
+    fontSize: "3rem",
   },
 }));
 
@@ -44,7 +44,7 @@ export default function BadgeBox() {
         <center>
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} justifyContent="center">
     <Grid item xs={4}>
-     <img src={Star} height='120'/>
+     <img src={Star} height='80'/>
     </Grid>
     <Grid item xs={4}>
     <div elevation={3} className={classes.circle}>
