@@ -11,13 +11,34 @@ import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import { useDispatch } from 'react-redux';
 //import { setInboxDetails } from '../../../../../redux/reducers/chat.slice';
 
-export default function InboxListItem({ inboxMessages, user }) {
+export default function InboxListItem({ /*inboxMessages, user*/ }) {
  const dispatch = useDispatch();
 
   const setInboxData = (data) => {
    // dispatch(setInboxDetails(data));   
     // console.log("DATA:", data);
   }
+
+  const inboxMessages = [
+    { coolerName:"MARKETING EVENT",
+      lastName:"Buoy",
+      email:"johnboy@gmail.com",
+      id:"OWDSDE12323",
+     time:1679443205
+    },
+    { coolerName:"SPONSORSHIP SEMINAR",
+    lastName:"Buoy",
+    email:"johnboy@gmail.com",
+    id:"OWDSDE12323",
+   time:1679443205
+  },
+  { coolerName:"HR WELLNESS CHECK",
+  lastName:"Buoy",
+  email:"johnboy@gmail.com",
+  id:"OWDSDE12323",
+ time:1679443205
+  },
+   ]
 
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>

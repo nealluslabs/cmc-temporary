@@ -16,7 +16,7 @@ const navigationConfig = [
      id: 'dasboard',
      title: 'Dashboard',
      type: 'group',
-     icon: 'dashboard',
+     icon: 'home',
      url: '/apps/sessions',
    },
    {
@@ -24,7 +24,7 @@ const navigationConfig = [
     title: 'Feed',
     type: 'group',
     icon: 'book',
-    url: '/apps/sessions',
+    url: '/apps/feed',
   },
  
   {
@@ -35,28 +35,21 @@ const navigationConfig = [
     children: [
       {
         id: 'sessions',
-        title: 'Sessions',
+        title: 'Videos',
         type: 'item',
         icon: 'photo',
-        url: '/apps/sessions',
+        url: '/apps/videos',
         // url: '/apps/coming-soon2',
       },
       {
         id: 'book-dev',
-        title: 'Book Dev',
+        title: 'Docs',
         type: 'item',
         icon: 'event_available',
-        url: '/apps/sessions',
+        url: '/apps/docs',
         // url: '/apps/coming-soon3',
       },
-      {
-        id: 'bootcamp',
-        title: 'Bootcamp',
-        type: 'item',
-        icon: 'group',
-        url: '/apps/sessions',
-        // url: '/apps/coming-soon2',
-      },
+      
     ],
   },
   {
@@ -64,14 +57,14 @@ const navigationConfig = [
     title: 'Jobs',
     type: 'group',
     icon: 'person',
-    url: '/apps/sessions',
+    url: '/apps/members',
   },
   {
     id: 'settings',
     title: 'Settings',
     type: 'group',
     icon: 'settings',
-    url: '/apps/sessions',
+    url: '/apps/settings',
   },
   /*{
     id: 'admin',

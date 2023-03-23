@@ -1,5 +1,5 @@
 
-import { Helmet } from 'react-helmet-async';
+//import { Helmet } from 'react-helmet-async';
 import { Grid, Container, Typography, Paper, Button, Stack, Skeleton } from '@mui/material';
 
 // components
@@ -15,9 +15,9 @@ import Chat from './Chat';
 export default function InboxPage() {
   return (
     <>
-      <Helmet>
+      {/*<Helmet>
         <title> Cooler | INBOX </title>
-      </Helmet>
+      </Helmet>*/}
 
       <Container maxWidth="xl">
       {/* <ThemeProvider>

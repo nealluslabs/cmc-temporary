@@ -55,8 +55,8 @@ function LoginForm(props) {
     const email = model.email;
     const password = model.password;
     const user = { email, password };
-    dispatch(signin(user, history));
-   //history.push('/apps/sessions')
+    //dispatch(signin(user, history));
+   history.push('/apps/sessions')
   }
 
 

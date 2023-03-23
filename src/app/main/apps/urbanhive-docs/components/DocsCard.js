@@ -17,7 +17,7 @@ import DocsRowCard from './docs-box';
 export default function DocsPage() {
   const location = useLocation();
   const dispatch = useDispatch();
-  const { user } = useSelector((state) => state.auth);
+ // const { user } = useSelector((state) => state.auth);
 
   
 const videosData = [
@@ -60,9 +60,9 @@ const allVideosData2 = videosData2?.length ? (
 
   return (
     <>
-      <Helmet>
+      {/*<Helmet>
         <title> CMC | DOCS </title>
-      </Helmet>
+      </Helmet>*/}
       <Container maxWidth="xl">
           {
         // isLoading ?

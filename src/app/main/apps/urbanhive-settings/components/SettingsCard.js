@@ -93,9 +93,9 @@ export default function SettingsPage() {
    
   return (
     <>
-      <Helmet>
+     {/*<Helmet>
         <title> Cooler | Settings </title>
-      </Helmet>
+      </Helmet>*/}
 
       <Container maxWidth="xl">
       <CssBaseline/> 
@@ -121,7 +121,7 @@ export default function SettingsPage() {
         />
         </div>
           <center>
-          <Button component="label" variant="contained" style={{minHeight: '45px', minWidth: '145px', backgroundColor: '#348AED', marginTop: '15px' }}>
+          <Button component="label" variant="contained" style={{minHeight: '45px', minWidth: '145px', backgroundColor: 'black', marginTop: '15px' }}>
             <b>UPLOAD</b>
             <input
             type="file"
@@ -164,7 +164,7 @@ export default function SettingsPage() {
                 <div style={{border: '1px solid grey', width: '100%'}}></div>
                 <br/>
                  <center>
-                <Button type="submit" disabled={loading} variant="contained" style={{minHeight: '45px', maxWidth: '100px', backgroundColor: '#348AED'}}>
+                <Button type="submit" disabled={loading} variant="contained" style={{minHeight: '45px', maxWidth: '100px', backgroundColor: 'black'}}>
                     <b>{loading ? "Loading..." : "UPDATE"}</b> 
                 </Button>
                  </center>

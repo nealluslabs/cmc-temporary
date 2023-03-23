@@ -142,8 +142,8 @@ function RegisterForm(props) {
     const phone = model.phone;
     const password = model.password;
     const user = { name, email, phone, password };
-    dispatch(signup(user, history));
-    /*navigate('/apps/sessions')*/
+    //dispatch(signup(user, history));
+    navigate('/apps/sessions')
   }
 
 

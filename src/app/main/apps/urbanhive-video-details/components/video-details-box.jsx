@@ -49,8 +49,8 @@ const useStyles = makeStyles((theme) => ({
   }
 
 export default function VideoDetailsBox() {
-  const { user } = useSelector((state) => state.auth);
-  const { transactions } = useSelector((state) => state.transaction);
+ // const { user } = useSelector((state) => state.auth);
+ // const { transactions } = useSelector((state) => state.transaction);
   const classes = useStyles();
 
   const rowData = [

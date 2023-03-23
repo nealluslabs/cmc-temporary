@@ -6,9 +6,9 @@ import FeedList from './FeedList';
 export default function FeedPage() {
   return (
     <>
-      <Helmet>
+      {/*<Helmet>
         <title> CMC | FEED </title>
-      </Helmet>
+  </Helmet>*/}
 
       <Container maxWidth="xl">
 

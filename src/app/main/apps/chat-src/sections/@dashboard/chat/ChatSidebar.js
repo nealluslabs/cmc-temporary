@@ -29,7 +29,7 @@ const ToggleButtonStyle = styled((props) => <IconButton disableRipple {...props}
   borderRadius: `0 12px 12px 0`,
   color: theme.palette.primary.contrastText,
   backgroundColor: theme.palette.primary.main,
-  boxShadow: theme.customShadows.primary,
+  boxShadow:'none', /*theme.customShadows.primary,*/
   '&:hover': {
     backgroundColor: theme.palette.primary.darker,
   },
@@ -128,7 +128,7 @@ export default function ChatSidebar() {
             activeConversationId={activeConversationId}
            sx={{ ...(isSearchFocused && { display: 'none' }) }}
           /> */}
-          <InboxListItem inboxMessages={inboxMessages} user={user} />
+          <InboxListItem /*inboxMessages={inboxMessages} user={user}*/ />
       </Scrollbar>
     </>
   );

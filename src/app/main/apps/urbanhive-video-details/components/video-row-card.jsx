@@ -89,12 +89,12 @@ function VideosRowCard ({ videoId, title, desc, tags, isDetail}) {
             <Grid item xs={12} sm container spacing={2}>
               <Grid item xs container direction="column" spacing={0}>
                 <Grid item xs>
-                  <div style={{display: 'flex', border: '0px solid red', marginBottom: '-20px', marginLeft: isDetail && '150px' }}>
+                  <div style={{display: 'flex', border: '0px solid red', marginBottom: '5px', marginLeft: isDetail && '150px' }}>
                   <h2 style={{ fontSize: '19px'}}><b>{title.toUpperCase()}</b></h2>
                     &nbsp; &nbsp;
                   {/* <p style={{ fontSize: '17px'}}>{title.toUpperCase()}</p> */}
                   </div>
-                  <div style={{display: 'flex', marginBottom: '-20px', border: '0px solid red', marginLeft: isDetail && '10px', width: '100%'}}>
+                  <div style={{display: 'flex', marginBottom: '5px', border: '0px solid red', marginLeft: isDetail && '10px', width: '100%'}}>
                   {/* <h2 style={{ fontSize: '19px'}}><b>FEE: </b></h2> */}
                     &nbsp; &nbsp;
                   <p style={{ fontSize: '17px'}}>{desc}</p>
@@ -107,7 +107,7 @@ function VideosRowCard ({ videoId, title, desc, tags, isDetail}) {
                 </Grid>
               </Grid>
               
-              <Grid item xs direction="column" spacing={2}>
+              <Grid item xs container direction="column" spacing={2}>
               <Box display="flex" alignItems="center" className={classes.box}>
               <Grid item xs={6} sm container spacing={1} justifyContent="flex-end" alignItems="center">
               <Grid item justifyContent="flex-end" alignItems="center" sx={{mt: 5}}>
@@ -123,7 +123,7 @@ function VideosRowCard ({ videoId, title, desc, tags, isDetail}) {
             <Button variant="contained" style={{minHeight: '45px', minWidth: '145px', backgroundColor: 'black', }}
               onClick={() => {
                 const groupData = {videoId, title, desc, tags}
-                history.push('/dashboard/video-details', { state: { groupData } })
+                history.push('/apps/video-details', { state: { groupData } })
               }}>
                 {"View"}
             </Button>

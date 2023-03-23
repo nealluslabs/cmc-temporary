@@ -80,4 +80,4 @@ function SettingsApp(props) {
   
 }
 
-export default SessionsApp;
+export default SettingsApp;

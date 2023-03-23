@@ -22,17 +22,17 @@ export default function VideoPage() {
   const [postPerPage, setpostPerPage] = useState(3);
   const theme = useTheme();
   const dispatch = useDispatch();
-  const { user } = useSelector((state) => state.auth);
-  const { allGroups, publicGroups, isLoading } = useSelector((state) => state.group);
-
-  useEffect(() => {
-    dispatch(fetchGroups(user.employeerID));
-  }, [])
-  
-  useEffect(() => {
-    dispatch(fetchUserData(user.id));
-  }, [])
-
+ // const { user } = useSelector((state) => state.auth);
+ // const { allGroups, publicGroups, isLoading } = useSelector((state) => state.group);
+//
+ // useEffect(() => {
+ //   dispatch(fetchGroups(user.employeerID));
+ // }, [])
+ // 
+ // useEffect(() => {
+ //   dispatch(fetchUserData(user.id));
+ // }, [])
+//
 const videosData = [
     {id: 1, title: 'FINANCE', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.', tags: 'Psychology, Communication etc'},
     {id: 2, title: 'INSURANCE', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.', tags: 'Psychology, Communication etc'},
@@ -63,9 +63,9 @@ const allVideosData = currentVideosData?.length ? (
 
   return (
     <>
-      <Helmet>
+     { /*<Helmet>
         <title> CMC | VIDEOS </title>
-      </Helmet>
+      </Helmet>*/}
       <Container maxWidth="xl">
       {/* <SearchBox style={{ width: '100%' }} /> */}
       <br/>
@@ -75,14 +75,14 @@ const allVideosData = currentVideosData?.length ? (
     </Button>
     </Grid>
       <br/>
-      {
+      {/*
         isLoading ?
         <Stack>
         <Skeleton />
         <Skeleton animation="wave" />
         <Skeleton animation={false} />
         </Stack>
-        :
+        :*/
         <>
         {allVideosData}
         <Pagination 
